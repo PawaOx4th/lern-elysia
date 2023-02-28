@@ -27,8 +27,6 @@ jobs:
       #     labels: |
       #       report
       #       automated pr
-      - name: Make changes to pull request
-        run: date +%s > report.txt
 
       - name: Create Pull Request
         id: cpr
