@@ -49,7 +49,7 @@ jobs:
 
             [1]: https://github.com/peter-evans/create-pull-request
           labels: |
-            question
+            invalid
           assignees: PawaOx4th
           milestone: 1
           draft: false
