@@ -1,0 +1,3 @@
+name: GitHub Action for creating Pull Requests
+author: PawaOx4th / KaenPawanachai / kanpim5@gmail.com
+description: GitHub Action that will create a pull request from the current branch
