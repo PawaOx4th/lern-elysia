@@ -14,9 +14,13 @@ jobs:
         uses: peter-evans/create-pull-request@v4.2.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          committer: GitHub <noreply@github.com>
           commit-message: update authors
           title: Update AUTHORS
-          body: Credit new contributors by updating AUTHORS
+          signoff: false
+          body: |
+            Credit new contributors by updating AUTHORS..
+            🐱
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           branch: feat-auto-create-pr
           base: develop
