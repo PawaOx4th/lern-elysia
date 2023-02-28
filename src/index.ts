@@ -1,6 +1,6 @@
 import { Elysia } from "elysia"
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3100)
+const app = new Elysia().get("/", () => "Hello Elysia").listen(3200)
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
