@@ -12,5 +12,6 @@ jobs:
       - name: Create pull request
         uses: devops-infra/action-pull-request@v0.5.5
         with:
+          target_branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
           title: Automatic pull request
