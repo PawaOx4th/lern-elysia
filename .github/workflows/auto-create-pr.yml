@@ -1,0 +1,24 @@
+name: Auto Create pr
+on:
+  push:
+    branches-ignore: main
+
+jobs:
+  updateAuthors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: update authors
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: Update AUTHORS
+          body: Credit new contributors by updating AUTHORS
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          branch: feat-auto-create-pr
+          labels: |
+            report
+            automated pr
