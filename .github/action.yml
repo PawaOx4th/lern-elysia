@@ -1,8 +1,8 @@
 name: Run the Action on each commit
 on:
   push:
-    branches:
-      - feat/auto-create-pr
+    branches-ignore: main
+
 jobs:
   action-pull-request:
     runs-on: ubuntu-latest
