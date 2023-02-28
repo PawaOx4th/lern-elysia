@@ -37,9 +37,9 @@ jobs:
           commit-message: Update report
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
+          signoff: true
           base: develop
-          branch: feat-auto-create-pr
+          branch: ${{ github.ref_name }}
           title: "[Example-Kaen] Update report"
           body: |
             Update report
