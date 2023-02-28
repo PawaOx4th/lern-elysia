@@ -1,7 +1,9 @@
 name: Auto Create pr
 on:
   push:
-    branches-ignore: main
+    branches-ignore:
+      - main
+      - develop
 
 jobs:
   updateAuthors:
